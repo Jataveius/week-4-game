@@ -1,0 +1,51 @@
+h1 {
+    font-style: bold;
+}
+
+
+/* Background images */
+
+body {
+    background-image: url("http://i.imgur.com/bAhfK76.png"); 
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-attachment: fixed;
+}
+
+
+/* Instruction box */
+
+#instruction {
+    position: static;
+    float: left;
+	width: 100%;
+	max-width:500px;
+	padding: 20px;
+	margin: 0 0 20px;
+	background: violet;
+    border: 1px solid #ddd;
+    font: bold;
+
+}
+
+.randomNumber{
+    position: center;
+    font-size: 15px;
+}
+
+.winLoses{
+    text-align: left;
+    font-size: 15px;
+}
+
+.gem {
+    position: relative;
+    height: 60px;
+    margin: 20px;
+    
+  }
+
+  .scoreBanner{
+    position: relative;
+    font-size: 20px;
+}

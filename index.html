@@ -1,11 +1,100 @@
 <!DOCTYPE html>
 <html>
+
+<head>
+
+    <!-- Viewport. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Document's character set. -->
+    <meta charset="UTF-8">
+
+    <title>Ashley Crystal Game</title>
+
+    <!-- Css Link -->
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="stylesheet" type="text/css" href="./css/reset.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+
+</head>
+
 <body>
 
-<h1></h1>
+    <div id="main-container" class="container">
+        <section class="main-section">
+            <h1>Crystal Collector</h1>
 
-<p><a href="https://static1.squarespace.com/static/56ad949b01dbaed301a66d5b/t/58fe63f1be6594ff910d11df/1493066753683/">Visit W3Schools.com!</a></p>
-<p>The background attribute is not supported HTML5. Use CSS instead.</p>
+            <!-- Steven Unverse Theme -->
 
+
+            <!-- Game Instructions -->
+            <div>
+                <p>
+                    <div class="row" id="instruction">
+                        <div class="col-xs-12">
+                            <h2>Here's the instruction!</h2>
+                            You will be given a random number at the start of the game.
+                            <br /> There are four crystals below. By clicking on a crystal, you will add a specific amount of points
+                            to your total score.
+                            <br /> You win the game by matching your total score to random number, you lose the game if your total
+                            score goes above the random number.
+                            <br /> The value of each crystal is hidden from you until you click on it.
+                            <br /> Each time when the game starts, the game will change the values of each crystal.
+                </p>
+                </div>
+
+                </div>
+            </div>
+
+            <!-- Random Number -->
+            <div>
+                    <div class="randomNumber">
+                            <p>Target:
+                                <div id= "randomNumber"></div>
+                            </p>
+                        </div>
+                        <div class="winLosses">
+                            <p>Wins:
+                                <div id= "Wins"></div>
+                                </br>
+                                Losses: 
+                                <div id= "Losses"></div>
+                            </p>
+            </div>
+
+            <!-- Crystal Images  -->
+            <div class="row">
+
+                <!-- Gem 1 -->
+                <div class="gem">
+                    <a href="#">
+                        <img src="./images/alex_gem.png" alt="Alex Gem" width="100px" height="100px">
+
+                        <!-- Gem 2 -->
+                        <a href="#">
+                            <img src="./images/aquamarine_gem.png" alt="Aqua Marine" width="100px" height="100px">
+
+                            <!-- Gem 3 -->
+                            <a href="#">
+                                <img src="./images/ruby_gem.png" alt="Ruby Gem" width="100px" height="100px">
+
+                                <!-- Gem 4 -->
+                                <a href="#">
+                                    <img src="./images/yellow_gem.png" alt="Yellow Gem" width="100px" height="100px">
+                </div>
+            </div>
+
+            <!-- Score banner -->
+            <div>
+                <p class="scoreBanner">Your Score is:</p>
+            </div>
+
+            <!-- Players Score -->
+            <div> </div>
+
+            <script src="./javascript/game.js"></script>
 </body>
+
 </html>
