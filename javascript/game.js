@@ -14,7 +14,7 @@ $(document).ready(function () {
     random = Math.floor((Math.random() * 102) + 19);
 
 
-    $("#randomNumber").text(random);
+    $("#randomNumber").text("Random: " + random);
     // Gems have a random number from 1 - 12//
     gem1 = Math.floor((Math.random() * 11) + 1);
     gem2 = Math.floor((Math.random() * 11) + 1);
