@@ -12,7 +12,6 @@
 
     <!-- Css Link -->
     <link rel="stylesheet" type="text/css" href="./css/style.css">
-    <link rel="stylesheet" type="text/css" href="./css/reset.css">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
@@ -22,79 +21,87 @@
 
 <body>
 
-    <div id="main-container" class="container">
-        <section class="main-section">
-            <h1>Crystal Collector</h1>
+    <div class="header">
+        <h1>Crystal Collector</h1>
+    </div>
 
-            <!-- Steven Unverse Theme -->
+    <!-- Steven Unverse Theme -->
 
 
-            <!-- Game Instructions -->
-            <div>
-                <p>
-                    <div class="row" id="instruction">
-                        <div class="col-xs-12">
-                            <h2>Here's the instruction!</h2>
-                            You will be given a random number at the start of the game.
-                            <br /> There are four crystals below. By clicking on a crystal, you will add a specific amount of points
-                            to your total score.
-                            <br /> You win the game by matching your total score to random number, you lose the game if your total
-                            score goes above the random number.
-                            <br /> The value of each crystal is hidden from you until you click on it.
-                            <br /> Each time when the game starts, the game will change the values of each crystal.
-                </p>
-                </div>
+    <!-- Game Instructions -->
+    <div id="main-container" class="container" class="row" id="instruction" class="col-md-6" "col-md-offset-1">
 
-                </div>
+        <h2>Here's the instruction!</h2>
+        <p> You will be given a random number at the start of the game.
+            <br /> There are four crystals below. By clicking on a crystal, you will add a specific amount of points to your total
+            score.
+            <br /> You win the game by matching your total score to random number, you lose the game if your total score goes above
+            the random number.
+            <br /> The value of each crystal is hidden from you until you click on it.
+            <br /> Each time when the game starts, the game will change the values of each crystal.
+        </p>
+
+   
+        <!-- Random Number -->
+        <div class="row" class="col-md-4" "col-md-offset-1" class="randomNumber">
+            <div class="panel panel-default" class="panel-heading" Target: width="60px" height="60px">
+
             </div>
 
-            <!-- Random Number -->
-            <div>
-                    <div class="randomNumber">
-                            <p>Target:
-                                <div id= "randomNumber"></div>
-                            </p>
-                        </div>
-                        <div class="winLosses">
-                            <p>Wins:
-                                <div id= "Wins"></div>
-                                </br>
-                                Losses: 
-                                <div id= "Losses"></div>
-                            </p>
-            </div>
 
-            <!-- Crystal Images  -->
             <div class="row">
+                <div class="col-md-3" "col-md-offset-1" "winLosses">
+                    <div class="panel panel-default">
+                        <h3 class="panel-heading">Totals:</h3>
+                        <div class="panel panel-default">
 
-                <!-- Gem 1 -->
-                <div class="gem">
-                    <a href="#">
-                        <img src="./images/alex_gem.png" alt="Alex Gem" width="100px" height="100px">
+                            <!-- Wins Div -->
+                            <div id="wins">Wins:
+
+
+                                <!-- Losses Div -->
+                                <div id="losses">Losses:
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Crystal Images  -->
+                <div class="row" class="gem">
+
+                    <div class="col-xs-12" "col-md-offset-1">
+                        <!-- Gem 1 -->
+                        <img src="./images/alex_gem.png" id="gem1" class="pic" alt="Alex Gem" width="100px" height="100px">
 
                         <!-- Gem 2 -->
-                        <a href="#">
-                            <img src="./images/aquamarine_gem.png" alt="Aqua Marine" width="100px" height="100px">
+                        <img src="./images/aquamarine_gem.png" id="gem2" class="pic" alt="Aqua Marine" width="100px" height="100px">
 
-                            <!-- Gem 3 -->
-                            <a href="#">
-                                <img src="./images/ruby_gem.png" alt="Ruby Gem" width="100px" height="100px">
+                        <!-- Gem 3 -->
+                        <img src="./images/ruby_gem.png" id="gem2" class="pic" alt="Ruby Gem" width="100px" height="100px">
 
-                                <!-- Gem 4 -->
-                                <a href="#">
-                                    <img src="./images/yellow_gem.png" alt="Yellow Gem" width="100px" height="100px">
+                        <!-- Gem 4 -->
+                        <img src="./images/yellow_gem.png" id="gem4" class="pic" alt="Yellow Gem" width="100px" height="100px">
+                    </div>
                 </div>
-            </div>
 
-            <!-- Score banner -->
-            <div>
-                <p class="scoreBanner">Your Score is:</p>
-            </div>
 
-            <!-- Players Score -->
-            <div> </div>
+                <!-- Score banner -->
+                <div class="row">
+                    <div class="col-xs-6" class="total" class="playerScore">
+                        <div class="panel panel-default">
+                            <h3 class="panel-heading">Your Score is:</h3>
+                            
+                                     </div>
 
-            <script src="./javascript/game.js"></script>
+
+                                    <!-- JQuery -->
+                                    <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.js"></script>
+
+
+                                    <!-- JavaScript -->
+                                    <script type="text/javascript" src="./javascript/game.js"></script>
 </body>
 
 </html>
