@@ -29,7 +29,8 @@
 
 
     <!-- Game Instructions -->
-    <div id="main-container" class="container" class="row" id="instruction" class="col-md-6" "col-md-offset-1">
+    <div id="main-container" class="container" class="row" id="instruction">
+        <!-- class="col-md-6 col-md-offset-1"> -->
 
         <h2>Here's the instruction!</h2>
         <p> You will be given a random number at the start of the game.
@@ -40,68 +41,69 @@
             <br /> The value of each crystal is hidden from you until you click on it.
             <br /> Each time when the game starts, the game will change the values of each crystal.
         </p>
+    </div>
+    </div>
+    <!-- Random Number -->
+    <div class="row" class="winningNumber" id="randomNumber">
+        <!-- class="col-md-4 col-md-offset-1" -->
+        <!-- <width="60px" height="60px"> -->
+                <!-- class="panel panel-default" -->
 
-   
-        <!-- Random Number -->
-        <div class="row" class="col-md-4" "col-md-offset-1" class="randomNumber">
-            <div class="panel panel-default" class="panel-heading" Target: width="60px" height="60px">
-
-            </div>
-
-
-            <div class="row">
-                <div class="col-md-3" "col-md-offset-1" "winLosses">
-                    <div class="panel panel-default">
-                        <h3 class="panel-heading">Totals:</h3>
-                        <div class="panel panel-default">
-
-                            <!-- Wins Div -->
-                            <div id="wins">Wins:
+    </div>
 
 
-                                <!-- Losses Div -->
-                                <div id="losses">Losses:
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Crystal Images  -->
-                <div class="row" class="gem">
-
-                    <div class="col-xs-12" "col-md-offset-1">
-                        <!-- Gem 1 -->
-                        <img src="./images/alex_gem.png" id="gem1" class="pic" alt="Alex Gem" width="100px" height="100px">
-
-                        <!-- Gem 2 -->
-                        <img src="./images/aquamarine_gem.png" id="gem2" class="pic" alt="Aqua Marine" width="100px" height="100px">
-
-                        <!-- Gem 3 -->
-                        <img src="./images/ruby_gem.png" id="gem2" class="pic" alt="Ruby Gem" width="100px" height="100px">
-
-                        <!-- Gem 4 -->
-                        <img src="./images/yellow_gem.png" id="gem4" class="pic" alt="Yellow Gem" width="100px" height="100px">
-                    </div>
-                </div>
+    <div class="row" class="winLosses">
+        <h3> Your Score is:</h3>
+        <!-- class="col-md-3 col-md-offset-1"  -->
+        <!-- class="panel panel-default" -->
+        <!-- class="panel-heading"> -->
 
 
-                <!-- Score banner -->
-                <div class="row">
-                    <div class="col-xs-6" class="total" class="playerScore">
-                        <div class="panel panel-default">
-                            <h3 class="panel-heading">Your Score is:</h3>
-                            
-                                     </div>
+        <!-- Wins Div -->
+        <h4 id="winning">Wins:</h4>
+
+    <!-- Losses Div -->
+    <h4 id="losing">
+        </h4>
+    </div>
+    </div>
 
 
-                                    <!-- JQuery -->
-                                    <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.js"></script>
+    <!-- Crystal Images  -->
+    <div class="row" class="gem">
+        <!-- class="col-xs-12 col-md-offset-1" -->
+        <!-- Gem 1 -->
+        <img src="./images/alex_gem.png" id="gem1" alt="Alex Gem" width="100px" height="100px">
+
+        <!-- Gem 2 -->
+        <img src="./images/aquamarine_gem.png" id="gem2" alt="Aqua Marine" width="100px" height="100px">
+
+        <!-- Gem 3 -->
+        <img src="./images/ruby_gem.png" id="gem3" alt="Ruby Gem" width="100px" height="100px">
+
+        <!-- Gem 4 -->
+        <img src="./images/yellow_gem.png" id="gem4" alt="Yellow Gem" width="100px" height="100px">
+    </div>
 
 
-                                    <!-- JavaScript -->
-                                    <script type="text/javascript" src="./javascript/game.js"></script>
+
+    <!-- Score banner -->
+    <div class="row" class="total">
+        <h3> Totals:</h3>
+        <div id="playerScore">
+            </h3>
+            <!-- class="panel panel-default"> -->
+            <!-- class="col-xs-6" -->
+            <!-- class="panel-heading" -->
+
+            <!-- JQuery -->
+            <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.js"></script>
+
+
+            <!-- JavaScript -->
+            <script type="text/javascript" src="./javascript/game.js"></script>
+        </div>
+    </div>
 </body>
 
 </html>

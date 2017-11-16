@@ -1,60 +1,35 @@
-
-h1{
-    text-align: center;
-}
-
 .header{
-    color: white;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   text-align: center;
+   color: white
+}
+.container{
+    background-color: violet;
+    /* max-width: 650px; */
 }
 
+.row{
+float: relative;
+   text-align: center;
+}
 
 
 /* Background images */
-
-body {
+body{
     background-image: url("http://i.imgur.com/bAhfK76.png");
     background-repeat: no-repeat;
     background-position: right top;
     background-attachment: fixed;
 }
 
-.container{
-    position: relative;
-    background-color: violet;
-    max-width: 650px;
-    
-}
-
-.winLosses {
-    position: absolute;
-    font-size: 15px;
-}
-
-.gem {
-    position: relative;
-    height: 50px;
-    margin: 20px;
-}
-
-.total {
-    position: relative;
-    font-size: 18px;
-    height: 30px;
-    padding: 10px;
-}
-
-.randomNumber {
-    float: right;
-    font-size: 15px;
-}
-
-
 /*Media inqueries start here*/
 
 
+/* 
+
        /* Width at 640px and below */
-        @media screen and (max-width: 640px) {
+
+
+/* @media screen and (max-width: 640px) {
             #masthead,
             #main-container,
             {
@@ -62,6 +37,10 @@ body {
             }
             .wrapper {
                 /* Box-model */
-                width: 100%;
-                padding: 20px;
-            }
+
+
+/* width: 100%;
+                padding: 20px; */
+
+
+}
