@@ -1,46 +1,39 @@
-.header{
-   text-align: center;
-   color: white
+    .header {
+    text-align: center;
+    color: white
 }
-.container{
+
+.container {
     background-color: violet;
     /* max-width: 650px; */
 }
 
-.row{
-float: relative;
-   text-align: center;
+.row {
+    float: relative;
+    text-align: center;
 }
 
 
 /* Background images */
-body{
+
+body {
     background-image: url("http://i.imgur.com/bAhfK76.png");
     background-repeat: no-repeat;
     background-position: right top;
     background-attachment: fixed;
 }
 
-/*Media inqueries start here*/
 
+/* Media inqueries start here*/
 
-/* 
-
-       /* Width at 640px and below */
-
-
-/* @media screen and (max-width: 640px) {
-            #masthead,
-            #main-container,
-            {
-                position: static;
-            }
-            .wrapper {
-                /* Box-model */
-
-
-/* width: 100%;
-                padding: 20px; */
-
-
+@media screen and (max-width: 640px) {
+    #masthead,
+    #main-container,
+    {
+        position: static;
+    }
+    .wrapper {
+        width: 100%;
+        padding: 20px;
+    }
 }
