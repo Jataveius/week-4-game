@@ -31,6 +31,7 @@ $(document).ready(function () {
     // $(".randomNumber").text(random);
     // $("#playerScore").text(total);
 
+
     //Did the player win or lose//
 
     function winner() {
@@ -45,7 +46,7 @@ $(document).ready(function () {
         alert("You've Lose!");
 
         losses++;
-        $("#losing").text( "Losses: " + losses);
+        $("#losing").text("Losses: " + losses);
         reset();
     }
 
@@ -57,8 +58,8 @@ $(document).ready(function () {
     //     }
     // }
 
-    // On clicks
 
+    // On clicks
 
     $("#gem1").on("click", function () {
         total = total + gem1;
@@ -90,8 +91,8 @@ $(document).ready(function () {
         } else if (total > random) {
             losser();
         }
-
     })
+
     $("#gem4").on("click", function () {
         total = total + gem4;
         $("#playerScore").text(total);
@@ -104,10 +105,10 @@ $(document).ready(function () {
     });
 
 
-    //resets the game
+    // resets the game
     function reset() {
         random = Math.floor((Math.random() * 102) + 19);
-        $(".randomNumber").text(random);
+        $("#randomNumber").text(random);
         gem1 = Math.floor((Math.random() * 11) + 1);
         gem2 = Math.floor((Math.random() * 11) + 1);
         gem3 = Math.floor((Math.random() * 11) + 1);
